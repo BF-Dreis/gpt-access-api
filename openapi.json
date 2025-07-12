@@ -1,0 +1,66 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Zugangsprüfung GPT",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/exec": {
+      "get": {
+        "operationId": "checkAccess",
+        "summary": "Prüft E-Mail-Zugriff im Google Sheet",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ergebnis der Prüfung",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "access": {
+                      "type": "boolean"
+                    },
+                    "vorname": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "produkt": {
+                      "type": "string"
+                    },
+                    "datum": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "gutschein": {
+                      "type": "string"
+                    },
+                    "land": {
+                      "type": "string"
+                    },
+                    "payment": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
