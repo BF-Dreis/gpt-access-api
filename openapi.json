@@ -4,6 +4,11 @@
     "title": "Zugangsprüfung GPT",
     "version": "1.0.0"
   },
+  "servers": [
+    {
+      "url": "https://script.google.com/macros/s/AKfycbwceFzfRuC02OmQruivVY0SPcw9KgE6ThC3h8I8mAHKu6bATbHAGTnSGYtYx2sqwlLE/exec"
+    }
+  ],
   "paths": {
     "/exec": {
       "get": {
@@ -27,33 +32,15 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "access": {
-                      "type": "boolean"
-                    },
-                    "vorname": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "produkt": {
-                      "type": "string"
-                    },
-                    "datum": {
-                      "type": "string"
-                    },
-                    "status": {
-                      "type": "string"
-                    },
-                    "gutschein": {
-                      "type": "string"
-                    },
-                    "land": {
-                      "type": "string"
-                    },
-                    "payment": {
-                      "type": "string"
-                    }
+                    "access": { "type": "boolean" },
+                    "vorname": { "type": "string" },
+                    "name": { "type": "string" },
+                    "produkt": { "type": "string" },
+                    "datum": { "type": "string" },
+                    "status": { "type": "string" },
+                    "gutschein": { "type": "string" },
+                    "land": { "type": "string" },
+                    "payment": { "type": "string" }
                   }
                 }
               }
